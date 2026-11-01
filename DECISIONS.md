@@ -120,7 +120,15 @@ Answering question 7, the owner chose (a). `void` means empty everywhere, withou
 `concat_print("Line one" concat \n concat "Line two");`. A string in quotes holds exactly what you see. Because of
 that, the way to put a `"` inside a string (a bare `\"` would follow the rule) is still open.
 
+### 2026-11-01 — No hidden conversions; `concat` joins strings only (owner: "No hidden conversions.")
+
+Answering question 9 (what `concat` can join), the owner chose (a) and said it as a rule: Void never converts a value
+behind your back. `"Age: " concat age` is an error while `age` is a number, so the number has to be turned into text
+first. This reaches past `concat`: C's implicit conversions (int to float, char to int, narrowing on assignment and so
+on) are not Void. How a conversion is written (`to_string(age)` was only a placeholder) is still open.
+
 ## Open
 
-Next is what `concat` can join. After that come `string`, `concat_print`, a `"` inside a string, the first program,
-typing, how it runs, the implementation language, the file extension and visibility. They are asked one at a time.
+Next is what `concat_print` is. After that come how conversions are written, `string`, a `"` inside a string, the
+first program, typing, how it runs, the implementation language, the file extension and visibility. They are asked
+one at a time.
