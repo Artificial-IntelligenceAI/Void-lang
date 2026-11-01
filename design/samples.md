@@ -38,3 +38,12 @@ return void;               ← returns nothing
 
 What it shows: `string str = void;` is the empty string, and a call with nothing to pass is written `(void)`, so
 `concat_print()` is not Void. This was the owner's answer to question 6, which still leaves empty blocks open.
+
+## 3. Conversion (2026-11-01)
+
+```c
+concat_print("Age: " concat string_convertor(age) concat \n);
+```
+
+What it shows: a conversion is a built-in written like a call, `string_convertor(…)` (spelt "convertor"), and it
+turns a value into a string. Whether other types follow the same `<type>_convertor` pattern is asked next.

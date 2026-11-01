@@ -132,7 +132,14 @@ on) are not Void. How a conversion is written (`to_string(age)` was only a place
 `concat_print` takes one string and prints it exactly, with no newline added. It is part of the language, not a
 library function. Void has no stdlib: what it can do is built in.
 
+### 2026-11-01 — A value is turned into a string with the built-in `string_convertor(…)` (owner: the line below)
+
+Asked how a conversion is written, the owner answered with a line, kept as sample 3:
+`concat_print("Age: " concat string_convertor(age) concat \n);`. It is a built-in written like a call, and the
+spelling is "convertor".
+
 ## Open
 
-Next is how a conversion is written. After that come `string`, a `"` inside a string, the first program, typing, how
-it runs, the implementation language, the file extension and visibility. They are asked one at a time.
+Next is whether other conversions follow the `<type>_convertor` pattern. After that come what happens when a
+conversion can't succeed, `string`, a `"` inside a string, the first program, typing, how it runs, the
+implementation language, the file extension and visibility. They are asked one at a time.
