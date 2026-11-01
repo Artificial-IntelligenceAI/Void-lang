@@ -114,8 +114,13 @@ Answering question 7, the owner chose (a). `void` means empty everywhere, withou
 `[void]`, no arguments `(void)`, returning nothing `return void;`, the empty string `= void`, and the empty block
 `{ void }`.
 
+### 2026-11-01 — Escapes live only outside quotes; inside quotes a backslash is just a backslash (owner: "(a)")
+
+`\n`, `\t` and the other escapes are values of their own, joined with `concat`:
+`concat_print("Line one" concat \n concat "Line two");`. A string in quotes holds exactly what you see. Because of
+that, the way to put a `"` inside a string (a bare `\"` would follow the rule) is still open.
+
 ## Open
 
-Next is how `\n` and other escapes work (the hello sample writes `\n` bare, outside quotes). After that come
-`string`, `concat`, `concat_print`, the first program, typing, how it runs, the implementation language, the file
-extension and visibility. They are asked one at a time.
+Next is what `concat` can join. After that come `string`, `concat_print`, a `"` inside a string, the first program,
+typing, how it runs, the implementation language, the file extension and visibility. They are asked one at a time.
