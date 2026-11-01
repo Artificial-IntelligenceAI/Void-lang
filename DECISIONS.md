@@ -34,7 +34,23 @@ grafting). Graft is C's syntax, with memory managed by a garbage collector inste
 pitch decisions 1 (core idea), 4 (memory: garbage collected) and 7 (syntax: C's). "Basically" leaves open how close
 to C it stays. That is the next question.
 
+### 2026-11-01 — Graft looks like C but is its own language, as in the owner's first sample (owner: "Kinda like that")
+
+Asked how close to C Graft stays (superset, C cleaned up, minimal change, or something else), the owner answered
+with a program, kept in [`design/samples.md`](design/samples.md):
+
+```c
+void main[void] {
+string str = "World!";
+concat_print("Hello, " concat str concat \n);
+return void;
+}
+```
+
+`main[void]` and `concat` are not C, so Graft is not a superset of C. It is C-like with its own rules. The eight
+things the sample shows are listed in `design/samples.md`, and each is asked separately.
+
 ## Open
 
-These are left from [`design/pitch.md`](design/pitch.md): how close to C Graft stays, the first program, typing, how
+These are left from [`design/pitch.md`](design/pitch.md): what the hello sample's readings mean, the first program, typing, how
 it runs, the implementation language, the file extension and visibility. They are asked one at a time.
