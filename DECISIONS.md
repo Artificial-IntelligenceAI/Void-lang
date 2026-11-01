@@ -156,8 +156,13 @@ instead UB 💀". So `int_convertor("abc")` alone stops the program with an erro
 undefined behaviour: the program has promised the conversion can't fail, so the check can be skipped. What may follow
 `otherwise` besides a value is asked next.
 
+### 2026-11-01 — `otherwise` takes a value or a block (owner: "(b)")
+
+`int n = int_convertor(s) otherwise 0;` or `int n = int_convertor(s) otherwise { … };`. What a block that doesn't
+`return` gives back is asked next.
+
 ## Open
 
-Next is what may follow `otherwise` (a value only, or also a block). After that come `string`, a `"` inside a
-string, the first program, typing, how it runs, the implementation language, the file extension and visibility.
-They are asked one at a time.
+Next is what an `otherwise` block that doesn't leave gives back. After that come `string`, a `"` inside a string,
+the first program, typing, how it runs, the implementation language, the file extension and visibility. They are
+asked one at a time.
