@@ -185,7 +185,13 @@ With `n` void, `n * 3` is void. Addition lets void drop out (`n + 1` is `1`), bu
 reads subtraction like addition (`n - 5` is `-5`, `5 - n` is `5`) and `n / 3` like multiplication (a third of nothing
 is void), unless the owner says otherwise. Dividing by void (`3 / n`) is asked next.
 
+### 2026-11-01 — Dividing by void gives void (owner: "(a)")
+
+With `n` void, `3 / n` is void: splitting 3 into nothing parts leaves nothing. So far, `+` and `-` let void drop out,
+and `*` and `/` give void whichever side it is on.
+
 ## Open
 
-Next is dividing by void. After that come `string`, a `"` inside a string, the first program, typing, how it runs,
-the implementation language, the file extension and visibility. They are asked one at a time.
+Next is how a program checks whether something is void. After that come comparisons with void, `string`, a `"`
+inside a string, the first program, typing, how it runs, the implementation language, the file extension and
+visibility. They are asked one at a time.
