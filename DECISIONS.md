@@ -148,8 +148,16 @@ The owner: "Oh, btw, funnily. If you put `void` instead of `;`, the error msg wo
 of mentioning `void` there". `void` is empty even to the compiler's errors. In `string str = "x" void`, the error says
 a `;` is missing after `"x"` and never mentions `void`.
 
+### 2026-11-01 — A failed conversion stops the program unless handled with `otherwise`; `otherwise void` is undefined behaviour (owner)
+
+The owner: "default to stop, and you can handle with `otherwise`. And of course, if you say `otherwise void`, it's
+instead UB 💀". So `int_convertor("abc")` alone stops the program with an error, while
+`int n = int_convertor(s) otherwise 0;` gives `0` instead. `otherwise void` handles it with nothing, and that is
+undefined behaviour: the program has promised the conversion can't fail, so the check can be skipped. What may follow
+`otherwise` besides a value is asked next.
+
 ## Open
 
-Next is what happens when a conversion can't succeed (`int_convertor("abc")`). After that come `string`, a `"`
-inside a string, the first program, typing, how it runs, the implementation language, the file extension and
-visibility. They are asked one at a time.
+Next is what may follow `otherwise` (a value only, or also a block). After that come `string`, a `"` inside a
+string, the first program, typing, how it runs, the implementation language, the file extension and visibility.
+They are asked one at a time.
