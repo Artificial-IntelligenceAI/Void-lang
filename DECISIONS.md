@@ -179,7 +179,13 @@ empty `int`, the way a void `string` is the empty string) is asked next.
 Every type can hold void, a real "nothing", and it isn't the type's zero. Using a void value is not an error. With
 `n` void, `n + 1` is `1`. What void does under other operators (`n * 3`) is asked next.
 
+### 2026-11-01 — Multiplying by void gives void: three of nothing is nothing (owner: "Right, so it's 3 of nothing, which is nothing")
+
+With `n` void, `n * 3` is void. Addition lets void drop out (`n + 1` is `1`), but multiplication keeps it. Claude
+reads subtraction like addition (`n - 5` is `-5`, `5 - n` is `5`) and `n / 3` like multiplication (a third of nothing
+is void), unless the owner says otherwise. Dividing by void (`3 / n`) is asked next.
+
 ## Open
 
-Next is what void does under other operators. After that come `string`, a `"` inside a string, the first program,
-typing, how it runs, the implementation language, the file extension and visibility. They are asked one at a time.
+Next is dividing by void. After that come `string`, a `"` inside a string, the first program, typing, how it runs,
+the implementation language, the file extension and visibility. They are asked one at a time.
