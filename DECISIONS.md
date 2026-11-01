@@ -174,7 +174,12 @@ give 0;
 well defined, unlike `otherwise void`. So an `int` can be void. What a void `int` is (a real nothing, or `0` as the
 empty `int`, the way a void `string` is the empty string) is asked next.
 
+### 2026-11-01 — A void `int` holds nothing, and using it doesn't stop: nothing + 1 is 1 (owner: "(a). Using it won't stop, it holds nothing, so it would add 1 to nothing. Which means 1")
+
+Every type can hold void, a real "nothing", and it isn't the type's zero. Using a void value is not an error. With
+`n` void, `n + 1` is `1`. What void does under other operators (`n * 3`) is asked next.
+
 ## Open
 
-Next is what a void `int` is. After that come `string`, a `"` inside a string, the first program, typing, how it
-runs, the implementation language, the file extension and visibility. They are asked one at a time.
+Next is what void does under other operators. After that come `string`, a `"` inside a string, the first program,
+typing, how it runs, the implementation language, the file extension and visibility. They are asked one at a time.
