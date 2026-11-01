@@ -74,8 +74,18 @@ in Hello World. And yes, I'm serious". The three are `void main[void]` and `retu
 Decisions are made by the owner's vibe. The GitHub repo is renamed `Artificial-IntelligenceAI/Void-lang` to follow
 the earlier `Graft-lang`. The entries above keep the name Graft, as it was when they were made.
 
+### 2026-11-01 — `[ ]` around a definition's parameters, `( )` around a call's arguments (owner: "(a)")
+
+As in the hello sample: `void main[void] { … }` defines, and `concat_print(…)` calls. Twice, (a) was offered with
+`[ ]` also used for indexing. `< >` is not taken for now (Radium's rule was option (b)).
+
+### 2026-11-01 — `""` is illegal; Void uses `void` (owner: "Forget `""`, that's illegal. We use `void`, of course")
+
+Said with the answer above. Whether this covers only the empty string (`string s = void;`) or quotes altogether is
+asked next.
+
 ## Open
 
-Question 3 is still open: brackets for parameters and calls. After that come what the rest of the hello sample means,
-the first program, typing, how it runs, the implementation language, the file extension and visibility. They are
-asked one at a time.
+What `void` replaces (the empty string `""`, or quotes altogether) is asked next. After that come what the rest of
+the hello sample means, the first program, typing, how it runs, the implementation language, the file extension and
+visibility. They are asked one at a time.
