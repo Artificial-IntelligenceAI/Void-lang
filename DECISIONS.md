@@ -196,6 +196,11 @@ The owner had said early on: "Since it's gonna get abandoned anyways, it depends
 same day it began as Graft. The last thing written was the most void program
 ([`design/most-void.md`](design/most-void.md)).
 
+### 2026-11-01 — `Artificial-IntelligenceAI/Void-lang` is public (owner: "public")
+
+Before the switch, Claude checked the whole history: all 25 commits are by the `.invalid` identity, and no tokens,
+keys or personal email appear in any version of any file. The repository is public with its full history.
+
 ## Open (left unasked)
 
 Void was abandoned with these still open: how to check for void (question 19, `n == void`, `is_void(n)` or not at
