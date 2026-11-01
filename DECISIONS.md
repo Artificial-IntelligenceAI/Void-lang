@@ -84,8 +84,16 @@ As in the hello sample: `void main[void] { … }` defines, and `concat_print(…
 Said with the answer above. Whether this covers only the empty string (`string s = void;`) or quotes altogether is
 asked next.
 
+### 2026-11-01 — Anything empty is written `void` (owner: "anything empty uses `void`")
+
+Answering question 5 (whether `void` replaces only the empty string or quotes altogether): neither exactly. Non-empty
+strings keep their quotes (`"World!"`), and `void` is how Void writes emptiness of any kind. That covers the hello
+sample's three voids: `void main` (returns nothing), `main[void]` (takes nothing) and `return void;` (gives back
+nothing). It also covers the empty string, `string s = void;`, in place of the illegal `""`. Whether it reaches empty
+calls (`f(void)`) and empty blocks is asked next.
+
 ## Open
 
-What `void` replaces (the empty string `""`, or quotes altogether) is asked next. After that come what the rest of
-the hello sample means, the first program, typing, how it runs, the implementation language, the file extension and
-visibility. They are asked one at a time.
+How far "anything empty" reaches (empty calls `f()` and empty blocks `{}`) is asked next. After that come the rest
+of the hello sample (`string`, `concat`, a bare `\n`, `concat_print`), the first program, typing, how it runs, the
+implementation language, the file extension and visibility. They are asked one at a time.
