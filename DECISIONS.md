@@ -108,8 +108,14 @@ return void;
 So `concat_print(void);` is how a call with nothing to pass is written, and `concat_print()` is not Void. The sample
 has no empty block, so `{ void }` vs `{}` is still open.
 
+### 2026-11-01 — An empty block is `{ void }`; `{}` is not Void (owner: "`void` is `void`, bro. You know")
+
+Answering question 7, the owner chose (a). `void` means empty everywhere, without exception: no parameters
+`[void]`, no arguments `(void)`, returning nothing `return void;`, the empty string `= void`, and the empty block
+`{ void }`.
+
 ## Open
 
-Empty blocks (`{ void }` or `{}`) are asked next. After that come the rest of the hello sample (`string`, `concat`, a
-bare `\n`, `concat_print`), the first program, typing, how it runs, the implementation language, the file extension
-and visibility. They are asked one at a time.
+Next is how `\n` and other escapes work (the hello sample writes `\n` bare, outside quotes). After that come
+`string`, `concat`, `concat_print`, the first program, typing, how it runs, the implementation language, the file
+extension and visibility. They are asked one at a time.
