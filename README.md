@@ -10,6 +10,7 @@ A programming language in design: C syntax with a garbage collector, basically. 
 
 - [`DECISIONS.md`](DECISIONS.md): what the owner has decided, and when.
 - [`design/samples.md`](design/samples.md): programs the owner wrote to show what Void looks like.
+- [`design/most-void.md`](design/most-void.md): the most void Void program.
 - [`design/pitch.md`](design/pitch.md): the first pitch, written while the language was Graft. Not taken.
 
 ## Licences
