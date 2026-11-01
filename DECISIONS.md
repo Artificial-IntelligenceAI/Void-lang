@@ -138,8 +138,18 @@ Asked how a conversion is written, the owner answered with a line, kept as sampl
 `concat_print("Age: " concat string_convertor(age) concat \n);`. It is a built-in written like a call, and the
 spelling is "convertor".
 
+### 2026-11-01 — Every conversion is a built-in `<type>_convertor(…)` (owner: "(a)")
+
+For example `int_convertor("42")` and `float_convertor(age)`, alongside `string_convertor(age)`.
+
+### 2026-11-01 — A `void` where a `;` belongs counts as nothing, so the error is the missing `;` (owner)
+
+The owner: "Oh, btw, funnily. If you put `void` instead of `;`, the error msg would act like there's no `;`, instead
+of mentioning `void` there". `void` is empty even to the compiler's errors. In `string str = "x" void`, the error says
+a `;` is missing after `"x"` and never mentions `void`.
+
 ## Open
 
-Next is whether other conversions follow the `<type>_convertor` pattern. After that come what happens when a
-conversion can't succeed, `string`, a `"` inside a string, the first program, typing, how it runs, the
-implementation language, the file extension and visibility. They are asked one at a time.
+Next is what happens when a conversion can't succeed (`int_convertor("abc")`). After that come `string`, a `"`
+inside a string, the first program, typing, how it runs, the implementation language, the file extension and
+visibility. They are asked one at a time.
