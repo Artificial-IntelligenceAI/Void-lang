@@ -1,7 +1,7 @@
 # Graft — the pitch
 
-> Status: **proposal**. Nothing here is decided until the owner says so in [`DECISIONS.md`](../DECISIONS.md).
-> Syntax in the examples is a placeholder so the ideas can be read; it is decision 7 below.
+> Status: **not taken.** On 2026-11-01 the owner chose "C syntax with a GC, basically" instead of any of these
+> directions (see [`DECISIONS.md`](../DECISIONS.md)). This page is kept for the record.
 
 In grafting, a cutting (the **scion**) is joined onto a rooted plant (the **stock**). They grow together at the
 **union**, and the result is one plant. The name suggests three different languages. Each is a real direction, and

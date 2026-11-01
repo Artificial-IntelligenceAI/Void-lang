@@ -22,7 +22,19 @@ The kinds are `decision`, `design`, `feature`, `fix` and `test`. The author iden
 `.invalid` address), so no personal email lands in the history. Claude created the repo **private**. Whether it
 becomes public is open (pitch, decision 9).
 
+### 2026-11-01 — Questions are asked one at a time (owner: "One question a time")
+
+Claude had listed nine decisions at once. From now on, Claude asks one question per message, in chat, never as a
+popup.
+
+### 2026-11-01 — Graft is C syntax with a garbage collector (owner: "It's just C syntax with a GC, basically")
+
+Asked about the core idea, the owner chose none of the pitch's three directions (foreign roots, checked grafts, live
+grafting). Graft is C's syntax, with memory managed by a garbage collector instead of `malloc`/`free`. This answers
+pitch decisions 1 (core idea), 4 (memory: garbage collected) and 7 (syntax: C's). "Basically" leaves open how close
+to C it stays. That is the next question.
+
 ## Open
 
-The first decisions are listed at the end of [`design/pitch.md`](design/pitch.md): the core idea, the first program,
-typing, memory, how it runs, the implementation language, syntax, the file extension and visibility.
+These are left from [`design/pitch.md`](design/pitch.md): how close to C Graft stays, the first program, typing, how
+it runs, the implementation language, the file extension and visibility. They are asked one at a time.
