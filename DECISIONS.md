@@ -92,8 +92,24 @@ sample's three voids: `void main` (returns nothing), `main[void]` (takes nothing
 nothing). It also covers the empty string, `string s = void;`, in place of the illegal `""`. Whether it reaches empty
 calls (`f(void)`) and empty blocks is asked next.
 
+### 2026-11-01 — A call with nothing to pass is written `(void)` (owner: the program below, "legal")
+
+Asked whether "anything empty" reaches calls and blocks, the owner answered with a program, kept in
+[`design/samples.md`](design/samples.md) as sample 2:
+
+```c
+void main[void] {
+string str = void;
+concat_print(void);
+return void;
+}
+```
+
+So `concat_print(void);` is how a call with nothing to pass is written, and `concat_print()` is not Void. The sample
+has no empty block, so `{ void }` vs `{}` is still open.
+
 ## Open
 
-How far "anything empty" reaches (empty calls `f()` and empty blocks `{}`) is asked next. After that come the rest
-of the hello sample (`string`, `concat`, a bare `\n`, `concat_print`), the first program, typing, how it runs, the
-implementation language, the file extension and visibility. They are asked one at a time.
+Empty blocks (`{ void }` or `{}`) are asked next. After that come the rest of the hello sample (`string`, `concat`, a
+bare `\n`, `concat_print`), the first program, typing, how it runs, the implementation language, the file extension
+and visibility. They are asked one at a time.

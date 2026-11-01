@@ -23,3 +23,18 @@ What it shows (to be confirmed, one question at a time):
 6. A `void` function ends with `return void;`.
 7. `main` returns `void` and takes `void`.
 8. Declarations (`string str = …;`) and statements ending in `;` are C's.
+
+## 2. Nothing (2026-11-01, "legal")
+
+The `←` notes are the owner's annotations, not Void comments.
+
+```c
+void main[void] {          ← takes nothing, gives nothing
+string str = void;         ← a string holding… nothing
+concat_print(void);        ← prints nothing
+return void;               ← returns nothing
+}
+```
+
+What it shows: `string str = void;` is the empty string, and a call with nothing to pass is written `(void)`, so
+`concat_print()` is not Void. This was the owner's answer to question 6, which still leaves empty blocks open.
