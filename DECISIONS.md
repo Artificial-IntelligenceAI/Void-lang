@@ -161,8 +161,20 @@ undefined behaviour: the program has promised the conversion can't fail, so the 
 `int n = int_convertor(s) otherwise 0;` or `int n = int_convertor(s) otherwise { … };`. What a block that doesn't
 `return` gives back is asked next.
 
+### 2026-11-01 — An `otherwise` block gives its value with `give`; `give void` makes it void, not UB (owner: "(b), and of course, if you `give void`, it would just make it void, not UB this time")
+
+```c
+int n = int_convertor(s) otherwise {
+concat_print("Using 0" concat \n);
+give 0;
+};
+```
+
+`give` was Claude's placeholder, and the owner used it, so `give` is the word. `give void` leaves `n` void and is
+well defined, unlike `otherwise void`. So an `int` can be void. What a void `int` is (a real nothing, or `0` as the
+empty `int`, the way a void `string` is the empty string) is asked next.
+
 ## Open
 
-Next is what an `otherwise` block that doesn't leave gives back. After that come `string`, a `"` inside a string,
-the first program, typing, how it runs, the implementation language, the file extension and visibility. They are
-asked one at a time.
+Next is what a void `int` is. After that come `string`, a `"` inside a string, the first program, typing, how it
+runs, the implementation language, the file extension and visibility. They are asked one at a time.
