@@ -50,6 +50,16 @@ return void;
 `main[void]` and `concat` are not C, so Graft is not a superset of C. It is C-like with its own rules. The eight
 things the sample shows are listed in `design/samples.md`, and each is asked separately.
 
+### 2026-11-01 — `for (i=0;i<n;i++)` is not Graft (owner: "I do not wanna see this shit in my lang")
+
+While choosing brackets (question 3), Claude passed on Radium's rule that a comparison needs a space on each side.
+The owner: "Who in tarnation even writes `a<b`?" Claude answered that packed C loops like `for (i=0;i<n;i++)` do. The
+owner said the line above. What exactly is refused (the packing, C's three-part `for`, or both) is asked next.
+Question 3 (brackets for parameters and calls) is still open.
+
+Radium's design session was consulted on `[]` vs `<>` vs `()`, at the owner's request. It reported Radium's rule:
+`( )` runs, `[ ]` holds values (parameters, indexing), `< >` fills in types only, and a comparison must be spaced.
+
 ## Open
 
 These are left from [`design/pitch.md`](design/pitch.md): what the hello sample's readings mean, the first program, typing, how
