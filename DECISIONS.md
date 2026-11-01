@@ -127,8 +127,12 @@ behind your back. `"Age: " concat age` is an error while `age` is a number, so t
 first. This reaches past `concat`: C's implicit conversions (int to float, char to int, narrowing on assignment and so
 on) are not Void. How a conversion is written (`to_string(age)` was only a placeholder) is still open.
 
+### 2026-11-01 — `concat_print` is Void's one print, built into the language; Void has no standard library (owner: "(a). Btw, there's no stdlib, this is the in the lang")
+
+`concat_print` takes one string and prints it exactly, with no newline added. It is part of the language, not a
+library function. Void has no stdlib: what it can do is built in.
+
 ## Open
 
-Next is what `concat_print` is. After that come how conversions are written, `string`, a `"` inside a string, the
-first program, typing, how it runs, the implementation language, the file extension and visibility. They are asked
-one at a time.
+Next is how a conversion is written. After that come `string`, a `"` inside a string, the first program, typing, how
+it runs, the implementation language, the file extension and visibility. They are asked one at a time.
