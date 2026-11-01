@@ -1,7 +1,8 @@
 # Graft — the pitch
 
 > Status: **not taken.** On 2026-11-01 the owner chose "C syntax with a GC, basically" instead of any of these
-> directions (see [`DECISIONS.md`](../DECISIONS.md)). This page is kept for the record.
+> directions (see [`DECISIONS.md`](../DECISIONS.md)), then renamed the language Void the same day. This page is
+> kept for the record.
 
 In grafting, a cutting (the **scion**) is joined onto a rooted plant (the **stock**). They grow together at the
 **union**, and the result is one plant. The name suggests three different languages. Each is a real direction, and

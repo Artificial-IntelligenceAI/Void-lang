@@ -1,6 +1,6 @@
-# Graft samples from the owner
+# Void samples from the owner
 
-Programs the owner wrote to show what Graft looks like, kept exactly as given. What each one shows is listed below
+Programs the owner wrote to show what Void looks like, kept exactly as given. What each one shows is listed below
 it. A reading becomes a rule only once the owner confirms it in [`DECISIONS.md`](../DECISIONS.md).
 
 ## 1. Hello (2026-11-01, "Kinda like that")

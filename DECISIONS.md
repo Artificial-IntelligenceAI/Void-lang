@@ -1,4 +1,4 @@
-# Graft — Design decisions
+# Void — Design decisions (formerly Graft)
 
 Running log. Each entry gives the date, the decision, who proposed it and who chose it, quoting the owner where they
 spoke. Nothing is final until the owner says so. Open questions are at the bottom.
@@ -66,7 +66,16 @@ Answering question 4, the owner chose (a). A binary operator (`=`, `<`, `+` and 
 `i=0` and `i<n` are errors, and the loop is written `for (i = 0; i < n; i++)`. A unary operator like `i++` stays
 attached. The exact operator list is settled when operators are designed.
 
+### 2026-11-01 — The language is Void, renamed from Graft (owner: "Rename it to Void now, there's 3 voids in Hello World. And yes, I'm serious")
+
+Asked question 3 again (brackets for parameters and calls, now with Radium's rule as an option), the owner said:
+"You know what? Since it's gonna get abandoned anyways, it depends on my vibe. Rename it to Void now, there's 3 voids
+in Hello World. And yes, I'm serious". The three are `void main[void]` and `return void;` in the hello sample.
+Decisions are made by the owner's vibe. The GitHub repo is renamed `Artificial-IntelligenceAI/Void-lang` to follow
+the earlier `Graft-lang`. The entries above keep the name Graft, as it was when they were made.
+
 ## Open
 
-These are left from [`design/pitch.md`](design/pitch.md): what the hello sample's readings mean, the first program, typing, how
-it runs, the implementation language, the file extension and visibility. They are asked one at a time.
+Question 3 is still open: brackets for parameters and calls. After that come what the rest of the hello sample means,
+the first program, typing, how it runs, the implementation language, the file extension and visibility. They are
+asked one at a time.
