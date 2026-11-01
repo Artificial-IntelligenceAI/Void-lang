@@ -1,5 +1,8 @@
 # Void
 
+> **Void is abandoned (2026-11-01).** It was designed for one day and never implemented. This repository is kept as
+> it was left.
+
 A programming language in design: C syntax with a garbage collector, basically. It was called Graft until
 2026-11-01. Nothing works yet, and nothing is decided until it is logged in [`DECISIONS.md`](DECISIONS.md).
 

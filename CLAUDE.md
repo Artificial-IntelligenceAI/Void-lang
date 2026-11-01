@@ -1,4 +1,4 @@
-# Working on Void (formerly Graft)
+# Working on Void (formerly Graft) — abandoned 2026-11-01
 
 - Design choices belong to the owner. Claude suggests (mark a suggestion ★) and never decides. A decision exists only
   once it is logged in `DECISIONS.md` with the owner's words quoted.

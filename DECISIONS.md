@@ -190,8 +190,14 @@ is void), unless the owner says otherwise. Dividing by void (`3 / n`) is asked n
 With `n` void, `3 / n` is void: splitting 3 into nothing parts leaves nothing. So far, `+` and `-` let void drop out,
 and `*` and `/` give void whichever side it is on.
 
-## Open
+### 2026-11-01 — Void is abandoned (owner: "Say that Void is abandoned, commit & push")
 
-Next is how a program checks whether something is void. After that come comparisons with void, `string`, a `"`
-inside a string, the first program, typing, how it runs, the implementation language, the file extension and
-visibility. They are asked one at a time.
+The owner had said early on: "Since it's gonna get abandoned anyways, it depends on my vibe." Void stops here, the
+same day it began as Graft. The last thing written was the most void program
+([`design/most-void.md`](design/most-void.md)).
+
+## Open (left unasked)
+
+Void was abandoned with these still open: how to check for void (question 19, `n == void`, `is_void(n)` or not at
+all), comparisons with void, `string`, a `"` inside a string, the readings in `design/most-void.md`, the first
+program, typing, how it runs, the implementation language, the file extension and visibility.
