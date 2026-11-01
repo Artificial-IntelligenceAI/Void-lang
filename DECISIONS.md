@@ -60,6 +60,12 @@ Question 3 (brackets for parameters and calls) is still open.
 Radium's design session was consulted on `[]` vs `<>` vs `()`, at the owner's request. It reported Radium's rule:
 `( )` runs, `[ ]` holds values (parameters, indexing), `< >` fills in types only, and a comparison must be spaced.
 
+### 2026-11-01 — Operators are spaced; packed code is refused; C's three-part `for` stays (owner: "Add some fucking spaces")
+
+Answering question 4, the owner chose (a). A binary operator (`=`, `<`, `+` and so on) has a space on each side, so
+`i=0` and `i<n` are errors, and the loop is written `for (i = 0; i < n; i++)`. A unary operator like `i++` stays
+attached. The exact operator list is settled when operators are designed.
+
 ## Open
 
 These are left from [`design/pitch.md`](design/pitch.md): what the hello sample's readings mean, the first program, typing, how
